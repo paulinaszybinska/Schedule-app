@@ -1,0 +1,30 @@
+{
+  "name": "mr-coffee-auth-paulinaszybinska",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pl-incode/mr-coffee-auth-paulinaszybinska.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pl-incode/mr-coffee-auth-paulinaszybinska/issues"
+  },
+  "homepage": "https://github.com/pl-incode/mr-coffee-auth-paulinaszybinska#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "express-ejs-layouts": "^2.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
