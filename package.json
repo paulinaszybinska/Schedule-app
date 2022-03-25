@@ -2,9 +2,9 @@
   "name": "mr-coffee-auth-paulinaszybinska",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "devStart": "nodemon main.js"
+    "devStart": "nodemon src/main.js"
   },
   "repository": {
     "type": "git",

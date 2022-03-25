@@ -1,0 +1,22 @@
+<%- include('./partials/navbar.ejs') %>
+<section class='hp-container'>
+    <div>
+        <h2 class='hp-title'>SCHEDULES:</h2>
+        <table>
+            <tr>
+                <th>User ID</th>
+                <th>Day</th>
+                <th>Start at:</th>
+                <th>End at:</th>
+            </tr>
+            <% for (let i=0; i<schedules.length; i++) { %>
+            <tr>
+                <td><%= schedules[i].user_id %></td>
+                <td><%= schedules[i].day %></td>
+                <td><%= schedules[i].start_at %></td>
+                <td><%= schedules[i].end_at %></td>
+            </tr>
+            <% } %>
+        </table>
+    </div>
+</section>
