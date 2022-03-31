@@ -1,7 +1,7 @@
 CREATE DATABASE mr_coffee_auth;
 
 CREATE TABLE users (
-    id          SERIAL       PRIMARY KEY    IDENTITY,
+    id          SERIAL       PRIMARY KEY,
     firstname   VARCHAR(30)  NOT NULL,
     lastname    VARCHAR(30)  NOT NULL,
     email       VARCHAR(50)  NOT NULL,
@@ -9,7 +9,7 @@ CREATE TABLE users (
 );
 
 CREATE TABLE schedules (
-    id          SERIAL       PRIMARY KEY    IDENTITY,
+    id          SERIAL       PRIMARY KEY,
     day         VARCHAR(10)  NOT NULL,
     start_at    TIME         NOT NULL,
     end_at      TIME         NOT NULL,
@@ -24,3 +24,4 @@ INSERT INTO users (firstname, lastname, email, password) VALUES
 INSERT INTO schedules (user_id, day, start_at, end_at) VALUES
     ('1', 'Monday', '10:00:00', '14:00:00'),
     ('2', 'Monday', '14:00:00', '18:00:00');
+    

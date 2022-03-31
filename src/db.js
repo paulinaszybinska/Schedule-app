@@ -4,7 +4,7 @@ const pool = new Pool({
     user: 'postgres',
     host: 'localhost',
     database: 'mr_coffee_auth',
-    password: '',
+    password: PGPASSWORD,
     port: 5432,
 });
 
