@@ -1,5 +1,6 @@
-<section class='login-container col-md-5'>
-    <form id='login-form' method='' action=''>
+<%- include('./partials/mainNav.ejs') %>
+<section class='login-container cont col-md-5'>
+    <form id='login-form' method='POST' action='/login'>
         <div class='container login-cont col-md-7'>
             <div class='row login-imgrow'>
                 <img src='./img/coffee_heart.jpg' class='login-img'>
@@ -8,12 +9,12 @@
                 <h2>WELCOME!</h2>
             </div>
             <div class='row'>
-                <label for='email_log'>Email</label>
-                <input type='email' name='email_log'>
+                <label for='email'>Email</label>
+                <input type='email' name='email' required>
             </div>
             <div class='row'>
                 <label for='password_log'>Password</label>
-                <input type='text' name='password_log'>
+                <input type='text' name='password' required>
             </div>
             <div class='row col-sm-4 login-btn'>
                 <input type='submit' value="Log in">

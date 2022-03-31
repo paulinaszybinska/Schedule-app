@@ -1,35 +1,38 @@
-<section class='signup-container col-md-5'>
-    <form id='signup-form' method='' action=''>
-        <div class='container signup-cont col-md-7'>
-            <div class='row signup-imgrow'>
-                <img src='./img/coffee_heart.jpg' class='signup-img'>
+<%- include('./partials/mainNav.ejs') %>
+<div id='signup'>
+    <section class='signup-container cont col-md-5'>
+        <form id='signup-form' method='POST' action='/signup'>
+            <div class='container signup-cont col-md-7'>
+                <div class='row signup-imgrow'>
+                    <img src='./img/coffee_heart.jpg' class='signup-img'>
+                </div>
+                <div class='row'>
+                    <h2>JOIN THE TEAM!</h2>
+                </div>
+                <div class='row'>
+                    <label for='firstname'>First name</label>
+                    <input type='text' name='firstname' required>
+                </div>
+                <div class='row'>
+                    <label for='lastname'>Last name</label>
+                    <input type='text' name='lastname' required>
+                </div>
+                <div class='row'>
+                    <label for='email'>Email</label>
+                    <input type='email' name='email' required>
+                </div>
+                <div class='row'>
+                    <label for='password'>Password</label>
+                    <input type='text' name='password' required>
+                </div>
+                <div class='row'>
+                    <label for='password_confirm'>Confirm password</label>
+                    <input type='text' name='password_confirm' required>
+                </div>
+                <div class='row col-sm-4 login-btn'>
+                    <input type='submit' value='Sign up'>
+                </div>
             </div>
-            <div class='row'>
-                <h2>JOIN THE TEAM!</h2>
-            </div>
-            <div class='row'>
-                <label for='firstname'>First name</label>
-                <input type='text' name='firstname'>
-            </div>
-            <div class='row'>
-                <label for='lastname'>Last name</label>
-                <input type='text' name='lastname'>
-            </div>
-            <div class='row'>
-                <label for='email_log'>Email</label>
-                <input type='email' name='email_log'>
-            </div>
-            <div class='row'>
-                <label for='password_log'>Password</label>
-                <input type='text' name='password_log'>
-            </div>
-            <div class='row'>
-                <label for='password_log'>Repeat password</label>
-                <input type='text' name='password_log'>
-            </div>
-            <div class='row col-sm-4 login-btn'>
-                <input type='submit' value='Sign up'>
-            </div>
-        </div>
-    </form>
-</section>
+        </form>
+    </section>
+</div>
