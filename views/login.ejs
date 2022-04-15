@@ -1,0 +1,31 @@
+<%- include('./partials/mainNav.ejs') %>
+<section class='login-container cont col-md-5'>
+    <form id='login-form' method='POST' action='/login'>
+        <div class='container login-cont col-md-7'>
+            <div class='row login-imgrow'>
+                <img src='./img/coffee_heart.jpg' class='login-img'>
+            </div>
+            <div class='row'>
+                <h2>WELCOME!</h2>
+            </div>
+            <div class='row'>
+                <label for='email'>Email</label>
+                <input type='email' name='email' required>
+            </div>
+            <div class='row'>
+                <label for='password_log'>Password</label>
+                <input type='text' name='password' required>
+            </div>
+            <div class='row col-sm-4 login-btn'>
+                <input type='submit' value="Log in">
+            </div>
+            <div class='row'>
+                <p>Not a member yet?
+                    <a class='signup-item' href='/signup'>
+                        Sign up!
+                    </a>
+                </p>
+            </div>
+        </div>
+    </form>
+</section>

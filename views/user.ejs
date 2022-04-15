@@ -1,0 +1,20 @@
+<%- include('./partials/navbar.ejs') %>
+<section class='userPage-container cont'>
+    <div>
+        <h2 class='hp-title'><%= firstname %> <%= lastname %></h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Start at:</th>
+                <th>End at:</th>
+            </tr>
+            <% for (let i=0; i<user.length; i++) { %>
+            <tr>
+                <td><%= user[i].day %></td>
+                <td><%= user[i].start_at %></td>
+                <td><%= user[i].end_at %></td>
+            </tr>
+            <% } %>
+        </table>
+    </div>
+</section>
