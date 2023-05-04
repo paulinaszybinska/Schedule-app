@@ -24,4 +24,4 @@ For the purpose of the project, a database and endpoints were created to handle 
     or 
     $ npx nodemon src/main.js
 ```
-<br><br>
+
